@@ -444,3 +444,9 @@ a:hover{
   
 
 }
+
+.nav-tabs .nav-link.active{
+  background-color: rgba(0, 0, 0, 0)!important;
+  border-color: none!important; 
+  border: 0px solid
+}
