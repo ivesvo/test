@@ -424,3 +424,23 @@ a:hover{
 }
 
 
+.loginbar:focus{
+  padding: 12px;
+  background-color:rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid teal !important;
+  max-width: 30vw;
+  outline: none;
+  
+}
+
+.loginbar{
+  padding: 12px;
+  background-color:rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid white!important;
+  max-width: 30vw;
+  outline: none;
+  
+
+}

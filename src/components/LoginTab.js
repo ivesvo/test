@@ -13,14 +13,14 @@ export default function LoginTab() {
     const [userPassword, setUserPassword] = useState("");
 
     const loginABC = async (e) => {
-        
-        console.log(userEmail,userPassword)
-      
+
+        console.log(userEmail, userPassword)
+
         e.preventDefault();
         const res = await axios.post(`${process.env.REACT_APP_URL}/auth/login`, { email: userEmail, password: userPassword }, {
             method: "POST"
         });
-        
+
         const { user, token } = res.data.data;
         console.log(user);
         localStorage.setItem("token", token);
@@ -54,6 +54,7 @@ export default function LoginTab() {
 
             <Form onSubmit={(e) => loginABC(e)}>
                 <div className="d-flex login">
+
                     <div>
                         <Form.Group controlId="formBasicEmail">
                             <Form.Label style={{ margin: "20px" }} className="tinytext">EMAIL ADDRESS</Form.Label>
@@ -61,7 +62,7 @@ export default function LoginTab() {
                                 type="email"
                                 row="3"
                                 col="8"
-                                className="searchbar"
+                                className="loginbar"
                                 placeholder="Enter email"
                                 onChange={(e) => setUserEmail(e.target.value)} />
 
@@ -75,23 +76,22 @@ export default function LoginTab() {
                         <Form.Group controlId="formBasicPassword">
                             <Form.Label style={{ margin: "20px" }} className="tinytext">PASSWORD</Form.Label>
                             <input
-                                className="searchbar"
+                                className="loginbar"
                                 row="3"
                                 col="8"
                                 type="password"
                                 placeholder="Password"
                                 onChange={(e) => setUserPassword(e.target.value)} />
                         </Form.Group>
-
                     </div>
 
 
                 </div>
 
-                <div>
+                <div className="d-flex justify-content-center">
                     <button onClick={loginABC} className="btn sharp">Sign In</button>
                     <FacebookLogin
-                        
+
                         appId="274983090404652"
                         autoLoad={false}
                         fields="name,email,picture"
@@ -100,12 +100,11 @@ export default function LoginTab() {
                         icon="fa-facebook"
                     />
 
-                 
+
 
 
 
                 </div>
-
             </Form>
 
         </div>

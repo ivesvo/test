@@ -33,7 +33,7 @@ const User = () => {
             <div className="loginpage">
                 <div>
                     <Tabs 
-                        style={{width: "40rem"}}
+                        style={{width: "50vw"}}
                         className="tinytext"
                         id="controlled-tab-example"
                         activeKey={key}
