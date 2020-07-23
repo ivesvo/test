@@ -66,7 +66,7 @@ Link:hover{
 .footer{
   display: flex;
   align-items: flex-end;
-  padding: 20 45px;
+  padding: 45 45px;
   height:75%;
   background-color: darkgray;
   
@@ -259,7 +259,12 @@ ARTISTS PAGE */
  @media only screen and (max-width: 600px) {
   .footertext{
     font-size: 20px;
+    padding: 3px 45px;
  }}
+
+ .footertext{
+   padding: 5px 45px;
+ }
 
 
 .artistpage{
@@ -382,6 +387,7 @@ a:hover{
 
 .big{
   font-size: 120px;
+  align-items: center;
 }
 
 

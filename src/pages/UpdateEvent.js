@@ -51,20 +51,20 @@ const UpdateEvent = (props) => {
             lineup,
             availableTicket,
             minimumAge,
-            address
+            address,
+            venue
         };
 
-        const updatedEvent = await fetch(`${process.env.REACT_APP_URL}/events/${eventId}`, {
+        const updatedEvent = await fetch(`https://beyond-be.herokuapp.com/events/${eventId}`, {
             method: "PUT",
             headers: {
                 authorization: `Bearer ${token}`,
                 "Content-Type": "application/json",
-
             },
             body: JSON.stringify(eventData),
         });
         if (updatedEvent.status == 200) {
-            alert("SUCCESSFULLY UPDATED ✅")
+            alert("SUCCESSFULLY UPDATED 👌")
             history.push({ pathname: `/events/${eventId}` })
         } else {
             alert("U CAN NOT")
@@ -74,9 +74,12 @@ const UpdateEvent = (props) => {
     return (
         <div>
 
-            <div className="artistpage body">
+            <div className="artistpage body d-column justifycontent-center">
+                <div style={{ textAlign: "center" }}>
+                    <h1 className="big" style={{ color: "#404040" }}>EDIT AN EVENT</h1>
+                </div>
 
-               
+
                 <div className="d-flex w-100 justify-content-center">
                     <form className="d-column justity-content-center" onSubmit={updateEvent} noValidate autoComplete="off">
                         <Form.Group controlId="formBasicEmail">
@@ -119,7 +122,7 @@ const UpdateEvent = (props) => {
 
                         <Form.Group controlId="formBasicEmail">
                             <input
-                                placeholder="Location"
+                                placeholder="City"
                                 className="searchbar"
                                 as="textarea"
                                 name="city"
@@ -142,7 +145,7 @@ const UpdateEvent = (props) => {
                             </Form.Text>
                         </Form.Group>
 
-                        <InputGroup style={{width:"30vw"}}>
+                        <InputGroup style={{ width: "30vw" }}>
                             <input
                                 placeholder="Price"
                                 className="searchbar"
@@ -172,30 +175,30 @@ const UpdateEvent = (props) => {
                         </Form.Group>
 
                         <Form.Group className="breadcrumbs" controlId="formBasicEmail">
-                        <div className="body">From</div>
-                        <input
-                            placeholder="Time"
-                            style={{color:"black"}}
-                            type="time"
-                            name="time"
-                            value={startTime}
-                            onChange={(e) => setStartTime(e.target.value)} />
-                        
+                            <div className="body">From</div>
+                            <input
+                                placeholder="Time"
+                                style={{ color: "black" }}
+                                type="time"
+                                name="time"
+                                value={startTime}
+                                onChange={(e) => setStartTime(e.target.value)} />
+
                             <Form.Text className="text-muted">
                             </Form.Text>
                             <div>To</div>
                             <input
-                            placeholder="Time"
-                            style={{color:"black"}}
-                           
-                            type="time"
-                            name="time"
-                            value={endTime}
-                            onChange={(e) => setEndTime(e.target.value)} />
-                        
+                                placeholder="Time"
+                                style={{ color: "black" }}
+
+                                type="time"
+                                name="time"
+                                value={endTime}
+                                onChange={(e) => setEndTime(e.target.value)} />
+
                             <Form.Text className="text-muted">
                             </Form.Text>
-                    </Form.Group>
+                        </Form.Group>
 
                         <Form.Group controlId="formBasicEmail">
                             <input
@@ -250,12 +253,9 @@ const UpdateEvent = (props) => {
                         </Form.Group>
                         <div>
 
-                        <Button className="btn sharp d-flex justify-content-center" type="submit" value="Update">UPDATE</Button>
+                            <Button className="btn sharp d-flex justify-content-center" type="submit" value="Update">UPDATE</Button>
 
                         </div>
-
-                        
-
 
                     </form>
                 </div>

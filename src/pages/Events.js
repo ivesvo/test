@@ -102,8 +102,8 @@ export default function Events() {
                                 </div>
                                 <div className="d-flex">
                                     <div className="city" onClick={(e) => handleAllClick()}>ALL</div>
-                                    {cities.map(item => <div className="city" style={{ marginRight: "20px" }} onClick={(e) => buildQ(`city=${item._id}`)}>{item.city.toUpperCase()}</div>)}
-
+                                    {cities.map(item => <div className="city" style={{ marginRight: "15px" }} onClick={(e) => buildQ(`city=${item._id}`)}>{item.city.toUpperCase()}</div>)}
+                                   
                                     <Col className="d-flex justify-content-end" style={{ padding: "10px" }}>
                                         {pageNum}/{maxPageNum}
                                     </Col>
@@ -146,8 +146,6 @@ const Event = ({ title, posterURL, city, date, _id }) => {
     return (
         <div style={{ maxWidth: '35rem' }} >
             <img
-                // width="300px"
-                // height="900px"
                 variant="top"
                 resizeMode='cover'
                 src={posterURL}

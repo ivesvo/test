@@ -88,10 +88,12 @@ const EventDetail = (props) => {
                             <button className="btn sharp" onClick={() => minusTicket()}>-</button>
                             <h3>{ticket}</h3>
                             <button className="btn sharp" onClick={() => addTicket()}>+</button>
+                            <div><h3>{price} VND</h3> </div>
 
                             <button className="btn sharp" onClick={() => dispatch({ type: "CART_UPDATE_FROM_LOCAL", payload: { event: eventDetail, count: ticket } })}>Add To Cart</button>
                         </div>
-                            <h3> Subtotal:{price} VND</h3>
+                            
+                           
                     </div>
 
                     <Col lg={12}>
