@@ -11,7 +11,7 @@ export default function Events() {
     const user = useSelector(s => s.user)
     const [events, setEvents] = useState([])
     const [pageNum, setPageNum] = useState(1)
-    const [maxPageNum, setMaxPageNum] = useState(5)
+    const [maxPageNum, setMaxPageNum] = useState(2)
     const [cities, setCities] = useState([])
     const [q, setQ] = useState("")
     const loading = useSelector(state => state.app.loading)
@@ -66,8 +66,8 @@ export default function Events() {
 
     const goNextPage = () => {
         setPageNum(pageNum + 1)
-        if (pageNum >=5){
-            setPageNum(5)
+        if (pageNum >=2){
+            setPageNum(2)
         }
     }
     const goPrevPage = () => {
