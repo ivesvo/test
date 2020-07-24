@@ -88,7 +88,7 @@ Link:hover{
 
 .shopnow{
   display:flex;
-  background-image: url(https://gfycat.com/allweightycarp);
+  /* background-image: url(https://gfycat.com/allweightycarp); */
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -97,7 +97,7 @@ Link:hover{
 
 }
 .shop{
-  
+  background-image: url(imgs/Comp1.gif);
   background-size: 100vw;
 
 }
