@@ -94,7 +94,7 @@ Link:hover{
 
 }
 .shop{
-  background-image: url(https://gfycat.com/allweightycarp);
+  background-image: url(imgs/Comp1.gif);
   background-size: 100vw;
 
 }
@@ -144,7 +144,7 @@ LOGIN PAGE  */
   justify-content: center;
   align-items: center;
   height: 100vh;
-  
+  padding: 45px;
   flex-wrap: wrap
 }
 
