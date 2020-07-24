@@ -32,7 +32,7 @@ const ArtistDetail = (props) => {
             </div>
             <div className="body">
                 <h1 className="artist-title" style={{ fontSize: "120px" }}>{title}</h1>
-                <div>
+                <div style={{paddingLeft:"45px"}}>
                     <div>{artists.genres && artists.genres.map(item => <Badge style={{ marginLeft: "5px" }} variant="light">{item.genre.toUpperCase()}</Badge>)}</div>
                     <div><i class="fal fa-location"></i>{artists.city}</div>
                     <div>Bandcamp / Instagram / Facebook</div>
