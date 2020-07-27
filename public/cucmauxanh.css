@@ -86,7 +86,7 @@ Link:hover{
   height: 100vh;
   justify-content: center;
   align-items: center;
-  /* background-image:url('./imgs/Comp1.gif')!important; */
+  background-image:url('./imgs/Comp1.gif')!important;
   background-size: 100vw !important;
   background-blend-mode: difference;
   
@@ -434,4 +434,11 @@ a:hover{
   background-color: rgba(0, 0, 0, 0)!important;
   border-color: none!important; 
   border: 0px solid
+}
+
+.fuck{
+  height:500px !important;
+  width: 300px !important;
+  object-fit: contain;
+  overflow: hidden;
 }

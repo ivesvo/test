@@ -38,7 +38,7 @@ const Cart = () => {
                     ? cart.map(x =>
                         <div className="w-100">
                             <div className="searchbar">
-                                <h2 style={{ marginLeft: "-5px" }}>{x.event.title}</h2>
+                                <h2>{x.event.title}</h2>
                                 <h2>{x.count} ticket(s) VND</h2>
                             </div>
                         </div>)
