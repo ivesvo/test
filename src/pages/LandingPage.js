@@ -9,7 +9,7 @@ const LandingPage = () => {
             </div>
             <Jumbotron/>
             
-         
+            <Pick/>
            <ShopNow/>
            <div className="lastpage">
             <SigningUp/>

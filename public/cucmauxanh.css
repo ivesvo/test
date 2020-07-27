@@ -27,7 +27,7 @@ Link:hover{
 
 .signing-up{
   padding: 45px; 
-  height: 26%;
+  height: 25%;
   background-color: tomato;
   color: white;
 }
@@ -38,17 +38,12 @@ Link:hover{
   color: white;
 }
 
-.btn:focus{
+.btn.sharp:focus{
   outline: none;
 }
 
-.btn1.sharp:hover{
-  color: tomato;
-  background-color: white!
-}
-
 .btn.sharp:hover{
-  color:teal;
+  color: tomato;
   background-color: white!important;
 }
 
@@ -56,17 +51,18 @@ Link:hover{
   border: none;
 }
 
-.cucmauxanh {
+/* .cucmauxanh {
   height: 9%;
   background-color: teal;
-}
+} */
+
 .lastpage {
   height: 90vh ;
 }
 .footer{
   display: flex;
   align-items: flex-end;
-  padding: 45 45px;
+  padding:  45px;
   height:75%;
   background-color: darkgray;
   
@@ -85,26 +81,20 @@ Link:hover{
 }
 
 
-
 .shopnow{
   display:flex;
-  /* background-image: url(https://gfycat.com/allweightycarp); */
   height: 100vh;
   justify-content: center;
   align-items: center;
- 
-  background-size:cover;
-
-}
-.shop{
-  background-image: url(https://i.ibb.co/ZKbZBTq/Comp-1.gif);
-  background-size: 100vw;
-
+  /* background-image:url('./imgs/Comp1.gif')!important; */
+  background-size: 100vw !important;
+  background-blend-mode: difference;
+  
 }
 
 .aothun {
-  max-width: 90vw;
-  max-height: 90vh;
+  max-width: 100vw;
+  max-height: 100vh;
   width: auto;
   height: auto;
 }
@@ -132,15 +122,6 @@ Link:hover{
 .TextField{
   color: white
 }
-/* 
-LOGIN PAGE  */
-
-/* .loginwindow{
-  width: 30rem;
-  height: 30rem;
-  color: white;
-  padding: 10px;
-} */
 
 .loginpage{
   display: flex;
@@ -208,12 +189,12 @@ font-weight: bolder;
 }
 
 .emailbar{
-  padding: 8px;
+  padding: -10px;
   background-color:rgba(0, 0, 0, 0);
   border: none
 }
 .emailbar:focus{
-  padding: 8px;
+  padding: -10px;
   background-color:rgba(0, 0, 0, 0);
   border: none;
   outline: none;
@@ -223,6 +204,18 @@ font-weight: bolder;
   justify-content: space-between;
   flex-wrap: wrap
 }
+.emailtext{
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 600px) {
+  .emailtext{
+    font-size: 20px;
+   
+ }
+}
+
 
 
 .search-icon {
@@ -262,12 +255,7 @@ ARTISTS PAGE */
  @media only screen and (max-width: 600px) {
   .footertext{
     font-size: 20px;
-    padding: 3px 45px;
  }}
-
- .footertext{
-   padding: 5px 45px;
- }
 
 
 .artistpage{
@@ -369,12 +357,9 @@ a:hover{
 }
 
 .poster-img{
-  
   display:flex;
   justify-content: center;
-  padding-top: 250px;
 }
-
 
 .lineup{
   display:column;
@@ -390,9 +375,7 @@ a:hover{
 
 .big{
   font-size: 120px;
-  align-items: center;
 }
-
 
 
 .tab:focus{
@@ -444,7 +427,6 @@ a:hover{
   border-bottom: 1px solid white!important;
   max-width: 30vw;
   outline: none;
-  
 
 }
 

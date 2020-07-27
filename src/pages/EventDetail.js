@@ -32,7 +32,7 @@ const EventDetail = (props) => {
     }, []);
 
     const addTicket = () => {
-        setPrice(eventDetail.price*(ticket+1))
+        setPrice(eventDetail.price * (ticket + 1))
         setTicket(ticket + 1)
         if (ticket === 10) {
             setPrice(price)
@@ -41,7 +41,7 @@ const EventDetail = (props) => {
     }
 
     const minusTicket = () => {
-        setPrice(eventDetail.price*(ticket-1))
+        setPrice(eventDetail.price * (ticket - 1))
         setTicket(ticket - 1)
         if (ticket <= 0) {
             setTicket(0)
@@ -53,48 +53,65 @@ const EventDetail = (props) => {
     return (
         <div className="body">
             <div className="event">
-                <div className="poster-img">
-                    <img className="poster" src={eventDetail.posterURL} />
-                </div>
-                <div style={{ paddingTop: "50px" }} className="artist-title">
-                    <h1 style={{ fontSize: "120px" }}>{eventDetail.title}</h1>
-                
+                <Row style={{ padding: "45px" }}>
 
+                    <Col md={6} style={{ paddingTop: "80px" }}>
+                        <h1 style={{ fontSize: "120px" }}>{eventDetail.title}</h1>
 
+                        <div>
+                            <div><Moment format="DD/MM/YYYY">{eventDetail.date}</Moment>  /  {eventDetail.startTime} - {eventDetail.endTime}  /  {eventDetail.minimumAge} + </div>
+                            <div><i class="fal fa-location"></i>{eventDetail.venue}</div>
+                            <Row>
+                                <Col md={3}>
+                                    Line-Up:
+                                 </Col>
+                                <Col md={4}>
+                                    <div>
+                                        {eventDetail.lineup && eventDetail.lineup.map(item => <h4>{item.toUpperCase()}</h4>)}
+                                    </div>
+                                </Col>
+                            </Row>
+                        </div>
+                        <div style={{ height: "150px" }}>
 
+                        </div>
 
-                    <div style={{ paddingLeft: "7px" }}>
-                        <div><Moment format="DD/MM/YYYY">{eventDetail.date}</Moment>  /  {eventDetail.startTime} - {eventDetail.endTime}  /  {eventDetail.minimumAge} + </div>
-                        <div><i class="fal fa-location"></i>{eventDetail.venue}</div>
-                        <Row>
-                            <Col md={3}>
-                                Line-Up:
-                        </Col>
-                            <Col md={4}>
-                                <div>
-                                    {eventDetail.lineup && eventDetail.lineup.map(item => <h4>{item.toUpperCase()}</h4>)}
-                                </div>
-                            </Col>
-                        </Row>
+                        <div style={{paddingBottom:"30px"}}>
+                            AVAILABLE TICKET: {eventDetail.availableTicket}
+                        </div>
 
-                    </div>
-                </div>
+                            <Row className="d-flex align-items-baseline">
+
+                                <Col md={2} xs={3}>
+                                  <button className="btn sharp" onClick={() => minusTicket()}>-</button>
+                                </Col>
+
+                                <Col md={2} xs={3}>
+
+                                {ticket}
+
+                                </Col>
+                              
+                                <Col md={2} xs={3}>
+                                <button className="btn sharp" onClick={() => addTicket()}>+</button>
+
+                                </Col>
+                              
+                                <Col md={2} xs={3}>{price} VND</Col>
+
+                                <button className="btn sharp" onClick={() => dispatch({ type: "CART_UPDATE_FROM_LOCAL", payload: { event: eventDetail, count: ticket } })}>Add To Cart</button>
+                            </Row>
+                        
+
+                    </Col>
+
+                    <Col md={6} className="poster-img">
+                        <img className="poster" src={eventDetail.posterURL} />
+                    </Col>
+                </Row>
+
 
                 <div style={{ paddingBottom: "30px" }}>
-                    <div style={{padding:"45px"}}>
-                        <h3>AVAILABLE TICKET: {eventDetail.availableTicket}</h3>
-                        <div className="d-flex breadcrumbs col-md-5">
-                           
-                            <button className="btn sharp" onClick={() => minusTicket()}>-</button>
-                            <h3>{ticket}</h3>
-                            <button className="btn sharp" onClick={() => addTicket()}>+</button>
-                            <div><h3>{price} VND</h3> </div>
-
-                            <button className="btn sharp" onClick={() => dispatch({ type: "CART_UPDATE_FROM_LOCAL", payload: { event: eventDetail, count: ticket } })}>Add To Cart</button>
-                        </div>
-                            
-                           
-                    </div>
 
                     <Col lg={12}>
                         <div className="artist-detail">{eventDetail.description}</div>
@@ -115,9 +132,6 @@ const EventDetail = (props) => {
                         </div>
 
                     </Col>
-
-
-
                 </div>
 
             </div>

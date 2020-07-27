@@ -4,13 +4,10 @@ import { Row, Col } from 'react-bootstrap'
 import { Navigationbar, SigningUp, Footer, Loading } from '../components'
 import { useHistory, Link } from 'react-router-dom'
 import { useDispatch, useSelector } from "react-redux"
-import { Zoom } from '@material-ui/core'
-
-
 
 const Artist = () => {
     const alphabet = [
-        ,
+
         [
             "A",
             "B",
@@ -18,7 +15,7 @@ const Artist = () => {
             "D",
             "E",
             "F",
-            
+
         ],
         [
             "G",
@@ -27,33 +24,27 @@ const Artist = () => {
             "J",
             "K",
             "L",
-            
-            
-
 
         ],
         ["M",
-        "N","O",
-        "P","Q",
+            "N", "O",
+            "P", "Q",
             "R",
-            
-            
-
-
         ], [
             "S",
             "T",
             "U",
-            "V","W",
-        "X"],["Y", "Z", "0-9"]
-
+            "V", "W",
+            "X"], ["Y", "Z"], ["0-9"]
     ]
+
+    // const number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
     let [artists, setArtists] = useState([])
     let history = useHistory()
     const loading = useSelector(state => state.app.loading)
     const dispatch = useDispatch()
-  
+
     useEffect(() => {
         if (artists.length === 0) {
             axios.get(`${process.env.REACT_APP_URL}/artists`).then((res) => {
@@ -75,9 +66,7 @@ const Artist = () => {
 
 
                             <div className="d-flex" style={{ marginTop: "10px" }}>
-
                                 <div>
-
                                     <a className="city" href="#A">A</a> /
                                         <a className="city" href="#B">B</a> /
                                         <a className="city" href="#C">C</a> /
@@ -105,36 +94,32 @@ const Artist = () => {
                                         <a className="city" href="#Y">Y</a> /
                                         <a className="city" href="#Z">Z</a> /
                                         <a className="city" href="#0-9">0-9</a>
-
                                 </div>
-                                {/* {cities.map(item => <div className="city" style={{ marginRight: "20px" }} onClick={(e) => handleCityClick(item)}>{item.city.toUpperCase()}</div>)} */}
                             </div>
                         </div>
                     </Row>
                     <div>
-                        {alphabet.map((item => <Row>{item.map(z=>
-                        <Col>
-                        <section id={z}>
-                        <h1 style={{color:"#404040"}} className="alphabet">{z}</h1>
-                            
-                        </section>
-                        
-                        <div>
-                        {artists.filter(element => element.title.startsWith(z)).map(element => <div><h4><Link onClick={() => history.push({ pathname: `/artists/${element.title}` })} style={{ color: "white" }} className="artist-title-list">{element.title}</Link></h4></div>)}
+                        {alphabet.map((item => <Row>{item.map(z =>
+                            <Col>
+                                <section id={z}>
+                                    <h1 style={{ color: "#404040" }} className="alphabet">{z}</h1>
+                                </section>
 
-                        </div>
-                        </Col>
-                            )}</Row>))}
-                    
-                       
+                                <div>
+                                    {artists.filter(element => element.title.startsWith(z || 0 <= z <= 9)).map(element => <div><h4><Link onClick={() => history.push({ pathname: `/artists/${element.title}` })} style={{ color: "white" }} className="artist-title-list">{element.title}</Link></h4></div>)}
+                                </div>
+                            </Col>
+                        )}</Row>))}
 
-                     </div>
-                     
-                        
-                     <div id="a"><i class="fa fa-long-arrow-up" aria-hidden="true" style={{ marginLeft: "-10px" }}></i> <span className="tinytext" style={{ marginLeft: "10px" }}>BACK TO TOP</span></div>
-                     
 
-                    
+
+                    </div>
+
+
+                    <div id="a"><i class="fa fa-long-arrow-up" aria-hidden="true" style={{ marginLeft: "-10px" }}></i> <span className="tinytext" style={{ marginLeft: "10px" }}>BACK TO TOP</span></div>
+
+
+
                 </div>
             }
 

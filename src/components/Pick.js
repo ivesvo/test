@@ -1,17 +1,17 @@
-// import React from 'react'
-// import { Row, Col } from 'react-bootstrap'
-// import YouTube from 'react-youtube';
+import React from 'react'
+import { Row, Col } from 'react-bootstrap'
+import YouTube from 'react-youtube';
 
-// const Pick = () => {
-//     return (
-//         <div className="artistpage body">
-//             <YouTube videoId="gKECH_b_67"/>;
+const Pick = () => {
+    return (
+        <div className="artistpage body">
+            {/* <YouTube videoId="gKECH_b_67"/>; */}
 
-//         </div >
+        </div >
 
 
 
-//     )
-// }
+    )
+}
 
-// export default Pick
+export default Pick

@@ -27,7 +27,7 @@ Link:hover{
 
 .signing-up{
   padding: 45px; 
-  height: 26%;
+  height: 35%;
   background-color: tomato;
   color: white;
 }
@@ -38,17 +38,12 @@ Link:hover{
   color: white;
 }
 
-.btn:focus{
+.btn.sharp:focus{
   outline: none;
 }
 
-.btn1.sharp:hover{
-  color: tomato;
-  background-color: white!
-}
-
 .btn.sharp:hover{
-  color:teal;
+  color: tomato;
   background-color: white!important;
 }
 
@@ -56,18 +51,19 @@ Link:hover{
   border: none;
 }
 
-.cucmauxanh {
+/* .cucmauxanh {
   height: 9%;
   background-color: teal;
-}
+} */
+
 .lastpage {
   height: 90vh ;
 }
 .footer{
   display: flex;
   align-items: flex-end;
-  padding: 20 45px;
-  height:75%;
+  padding:  45px;
+  height: 65%;
   background-color: darkgray;
   
   color: white;
@@ -91,17 +87,16 @@ Link:hover{
   height: 100vh;
   justify-content: center;
   align-items: center;
-
+  /* background-image:url('./imgs/Comp1.gif')!important; */
+  background-size: 100vw !important;
+  background-blend-mode: difference;
+  
 }
-.shop{
-  background-image: url(imgs/Comp1.gif);
-  background-size: 100vw;
 
-}
 
 .aothun {
-  max-width: 90vw;
-  max-height: 90vh;
+  max-width: 100vw;
+  max-height: 100vh;
   width: auto;
   height: auto;
 }
@@ -129,15 +124,6 @@ Link:hover{
 .TextField{
   color: white
 }
-/* 
-LOGIN PAGE  */
-
-/* .loginwindow{
-  width: 30rem;
-  height: 30rem;
-  color: white;
-  padding: 10px;
-} */
 
 .loginpage{
   display: flex;
@@ -205,12 +191,12 @@ font-weight: bolder;
 }
 
 .emailbar{
-  padding: 8px;
+  padding: -10px;
   background-color:rgba(0, 0, 0, 0);
   border: none
 }
 .emailbar:focus{
-  padding: 8px;
+  padding: -10px;
   background-color:rgba(0, 0, 0, 0);
   border: none;
   outline: none;
@@ -219,6 +205,17 @@ font-weight: bolder;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap
+}
+.emailtext{
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 600px) {
+  .emailtext{
+    font-size: 20px;
+   
+ }
 }
 
 
@@ -364,7 +361,8 @@ a:hover{
   
   display:flex;
   justify-content: center;
-  padding-top: 250px;
+  
+  /* padding-top: 250px; */
 }
 
 

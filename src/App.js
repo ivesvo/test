@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import { Artist, Cart, Events, Genres, LandingPage, Shop, Login, ArtistDetail, Profile, EventDetail, UpdateEvent, NewEvent } from './pages'
 import ProtectedRoute from './utils/ProtectedRoute'   
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useSelector, useDispatch } from "react-redux"

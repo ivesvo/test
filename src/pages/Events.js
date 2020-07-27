@@ -152,8 +152,6 @@ const Event = ({ title, posterURL, city, date, _id }) => {
                 alt="something"
                 className="card-img"
             />
-
-
             <div>
                 <Badge style={{ marginTop: "20px" }} variant="light">{moment(date).fromNow().toUpperCase()}</Badge>
 
