@@ -12,7 +12,6 @@ const Profile = () => {
     console.log(user)
 
     const goout = () => {
-        dispatch(logout())
     }
 
     return (
@@ -36,7 +35,7 @@ const Profile = () => {
                         : <div className="tinytext">USER</div>
                     }
                    
-                    <button className="tinytext btn sharp" onClick={() => goout()}> <h5><i class="fal fa-sign-out 5x" ></i></h5></button>
+                    <button className="tinytext btn sharp" onClick={() =>dispatch({type:"LOGOUT"})}> <h5><i class="fal fa-sign-out 5x" ></i></h5></button>
                 </div>
 
 

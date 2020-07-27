@@ -31,18 +31,6 @@ const Cart = () => {
     }
     console.log(cart)
 
-    // const finishBuying = async ()=>{
-    //     if(cart.length==0){
-    //         setShowAlert(!showAlert);
-    //     } else {
-    //          setShowAlert(!showAlert);
-    //         alert("THANKS U FOR SUPPORTING US 🤸")
-    //         history.push("/")
-    //     }
-
-
-    // }
-
     return (
         <div>
             <div className="artistpage body justify-content-center">
@@ -51,7 +39,7 @@ const Cart = () => {
                         <div className="w-100">
                             <div className="searchbar">
                                 <h2 style={{ marginLeft: "-5px" }}>{x.event.title}</h2>
-                                <h2>{x.count} ticket(s)</h2>
+                                <h2>{x.count} ticket(s) VND</h2>
                             </div>
                         </div>)
                     : <div style={{ textAlign: "center" }}>
@@ -65,32 +53,38 @@ const Cart = () => {
 
                    {cart.length===0
                    ?  <Alert show={show} onHide={handleClose}>
-                   <Modal.Header closeButton>
-                       <Modal.Title>👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀</Modal.Title>
-                   </Modal.Header>
+                        <Modal.Header closeButton>
+                         <Modal.Title></Modal.Title>
+                         </Modal.Header>
 
-                   <Modal.Body><h3>MAYBE BUY SOMETHING</h3></Modal.Body>
-                   <Modal.Footer>
+                        <Modal.Body>
+                            <h3>MAYBE BUY SOMETHING</h3>
+                        </Modal.Body>
+                        <Modal.Footer>
 
-                   <Modal.Title>👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀</Modal.Title>
+                        <button className="btn sharp" onClick={handleClose}>
+                            CLOSE
+                        </button>
  
-                   </Modal.Footer>
+                        </Modal.Footer>
                   
-                 </Alert>
+                    </Alert>
+
                    : <Alert show={show} onHide={handleClose}>
-                   <Modal.Header closeButton>
+                        <Modal.Header closeButton>
                        <Modal.Title>✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨</Modal.Title>
-                   </Modal.Header>
-                   <Modal.Body>THANKS FOR SUPPORTING US!</Modal.Body>
-                   <Modal.Footer>
-                       <button onClick={handleClose}>
-                           Close
-                           </button>
-                       <button onClick={handleClose}>
-                           Save Changes
-                           </button>
-                   </Modal.Footer>
-               </Alert>
+                        </Modal.Header>
+
+                        <Modal.Body>
+                            <h3>THANKS FOR SUPPORTING US!</h3>
+                        </Modal.Body>
+                        <Modal.Footer>
+                      
+                       <button className="btn sharp" onClick={handleClose}>
+                            CLOSE
+                        </button>
+                     </Modal.Footer>
+                     </Alert>
                    }
                 </div>
             </div>
