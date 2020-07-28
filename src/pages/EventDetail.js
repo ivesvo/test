@@ -97,7 +97,7 @@ const EventDetail = (props) => {
 
                                 </Col>
                               
-                                <Col md={3} xs={3}>{price} VND</Col>
+                                <Col md={2} xs={3}>{price} VND</Col>
 
                                 <button className="btn sharp" onClick={() => dispatch({ type: "CART_UPDATE_FROM_LOCAL", payload: { event: eventDetail, count: ticket } })}>Add To Cart</button>
                             </Row>

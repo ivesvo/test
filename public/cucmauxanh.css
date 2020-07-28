@@ -84,7 +84,7 @@ Link:hover {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-image: url("./imgs/Comp1.gif") !important;
+  background-image: url('/Comp1.gif') !important;
   background-size: 100vw !important;
   background-blend-mode: difference;
 }
