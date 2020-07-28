@@ -7,20 +7,13 @@ const LandingPage = () => {
         <div className="body">
             <div className="ivy">
             </div>
-            <Jumbotron/>
             
             <Pick/>
-           <ShopNow/>
-           <div className="lastpage">
-            <SigningUp/>
-
-            <Footer/>
-
-
-           </div>
-           
-        
-          
+            <ShopNow/>
+            <div className="lastpage">
+                <SigningUp/>
+                <Footer/>
+            </div>
         </div>
     )
 }

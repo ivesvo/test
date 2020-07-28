@@ -82,7 +82,7 @@ const EventDetail = (props) => {
 
                             <Row className="d-flex align-items-baseline">
 
-                                <Col md={2} xs={3}>
+                                <Col md={2} xs={2}>
                                   <button className="btn sharp" onClick={() => minusTicket()}>-</button>
                                 </Col>
 
@@ -97,7 +97,7 @@ const EventDetail = (props) => {
 
                                 </Col>
                               
-                                <Col md={2} xs={3}>{price} VND</Col>
+                                <Col md={3} xs={3}>{price} VND</Col>
 
                                 <button className="btn sharp" onClick={() => dispatch({ type: "CART_UPDATE_FROM_LOCAL", payload: { event: eventDetail, count: ticket } })}>Add To Cart</button>
                             </Row>
@@ -121,7 +121,7 @@ const EventDetail = (props) => {
                             {user.isAdmin
                                 ? <div className="tinytext" style={{ marginRight: "25px", }}>
                                     <i onClick={() => {
-                                        console.log("HIHIHI", eventDetail)
+                                      
                                         history.push({ pathname: `/events/update/${eventId}`, state: { eventDetail: eventDetail } })
                                     }} class="fa fa-adjust 3x" aria-hidden="true" style={{ marginRight: "20px" }}></i>
                                     <i class="fal fa-trash-alt"></i></div>

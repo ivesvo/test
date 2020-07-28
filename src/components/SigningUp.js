@@ -26,9 +26,8 @@ export default function SigningUp() {
 
 
     return (
-        <div className="signing-up">
-
-                <div className="d-flex align-items-baseline">
+        <div className="signing-up d-flex justify-content-center flex-column">
+                <div className="d-flex align-items-">
                         If not you, then
                             <Form.Group controlId="formBasicPassword">
                               <input
