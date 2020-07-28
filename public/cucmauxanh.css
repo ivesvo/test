@@ -446,7 +446,7 @@ a:hover {
 
 .picks{
   background-image: url(https://i.ibb.co/Y2gjcPf/Untitled-1-01.jpg);
-  background-size: cover;
-  max-height: 100vh;
+  background-size: 100vw;
+  max-height: 100vh !important;
   padding-top: 160px;
 }
