@@ -50,7 +50,9 @@ const Genres = () => {
 
                     <Col md={1}></Col>
                     <Col md={8} xs={12}>
-                        {genre ? <GenresDetail genre={genre} /> : <></>}
+                        {genre 
+                        ? <GenresDetail genre={genre} /> 
+                        : <></>}
                     </Col>
                 </Row>
             </div>

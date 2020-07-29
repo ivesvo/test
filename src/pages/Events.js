@@ -152,13 +152,12 @@ const Event = ({ title, posterURL, city, date, _id }) => {
                 alt="something"
                 className="card-img"
             />
-            <div>
+            <div style={{paddingBottom:"30px"}}>
                 <Badge style={{ marginTop: "20px" }} variant="light">{moment(date).fromNow().toUpperCase()}</Badge>
-
-                <Card.Text style={{ color: "white", marginTop: "20px" }} className="country tinytext">{city && city.code.toUpperCase()} /
+                <Card.Text style={{ color: "white", marginTop: "10px" }} className="country tinytext">{city && city.code.toUpperCase()} /
                 <Moment format="DD/MM/YYYY">{date}</Moment>
                 </Card.Text>
-                <Card.Title style={{ color: "white", fontSize: "30px" }} className="card-title body">{title}</Card.Title>
+                <Card.Title style={{ color: "white", fontSize: "30px", marginTop:"10px"}} className="card-title body">{title}</Card.Title>
 
                 <Link to={"/events/" + _id} className="stretched-link" />
             </div>

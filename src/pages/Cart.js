@@ -28,6 +28,7 @@ const Cart = () => {
         });
         console.log("SHIT", res.data.data.items)
         dispatch({ type: "CART_UPDATE_FROM_SERVER", payload: res.data.data })
+        
     }
     console.log(cart)
 
@@ -52,8 +53,8 @@ const Cart = () => {
 
 
                    {cart.length===0
-                   ?  <Alert show={show} onHide={handleClose}>
-                        <Modal.Header closeButton>
+                   ?  <Alert show={show}>
+                        <Modal.Header>
                          <Modal.Title></Modal.Title>
                          </Modal.Header>
 
@@ -71,12 +72,12 @@ const Cart = () => {
                     </Alert>
 
                    : <Alert show={show} onHide={handleClose}>
-                        <Modal.Header closeButton>
+                        <Modal.Header>
                        <Modal.Title>✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨</Modal.Title>
                         </Modal.Header>
 
                         <Modal.Body>
-                            <h3>THANKS FOR SUPPORTING US!</h3>
+                            <h3>THANKS FOR SUPPORTING US! CHECK YOUR INBOX FOR YOUR TIXS!</h3>
                         </Modal.Body>
                         <Modal.Footer>
                       

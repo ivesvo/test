@@ -7,7 +7,6 @@ const LandingPage = () => {
         <div className="body">
             <div className="ivy">
             </div>
-            
             <Pick/>
             <ShopNow/>
             <div className="lastpage">

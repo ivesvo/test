@@ -18,9 +18,9 @@ const cartReducer = function (state = init, { type, payload }) {
                 acc.push({ event: item, count: 1 });
                 return acc;
             }, [])
-
+            
             console.log("foo", itemsFromServer)
-            return { ...state, cart: itemsFromServer }
+            return { ...state, cart: state.cart.concat(itemsFromServer) }
         case "RESET":
             return { ...init }
         case "CART_UPDATE_FROM_LOCAL":

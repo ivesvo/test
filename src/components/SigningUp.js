@@ -86,9 +86,6 @@ export default function SigningUp() {
                         <Col md={4} xs={3} className="d-flex justify-content-end">
                         <button className="btn sharp 1" style={{ fontFamily: "TimesNow", fontSize: "50px" }} type="submit" onClick={createUser}>SIGN UP NOW</button>
                     </Col>
-
-
-
                     </Row>
                     <div>
                     GDPR-proof. We don’t spam

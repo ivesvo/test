@@ -35,7 +35,7 @@ const Profile = () => {
                         : <div className="tinytext">USER</div>
                     }
                    
-                    <button className="tinytext btn sharp" onClick={() =>dispatch({type:"LOGOUT"})}> <h5><i class="fal fa-sign-out 5x" ></i></h5></button>
+                    <button className="tinytext btn sharp" style={{margin:"5px"}} onClick={() =>dispatch({type:"LOGOUT"})}> <h5><i class="fal fa-sign-out 7x" ></i></h5></button>
                 </div>
 
 

@@ -96,13 +96,14 @@ Link:hover {
   height: auto;
 }
 
-.poster {
-  padding: 45px;
-  max-width: 100vw;
-  max-height: 100vh;
+.poster{
+  padding:45px;
+  max-width: 95vw;
+  max-height: 95vh;
   width: auto;
   height: auto;
 }
+
 
 .text-field {
   color: white;
@@ -233,7 +234,7 @@ ARTISTS PAGE */
 
 .alphabet {
   color: darkgray;
-  font-size: 120px;
+  font-size: 100px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -264,9 +265,9 @@ ARTISTS PAGE */
 }
 
 .artist-detail {
-  margin-top: 0px;
+  margin-top: 5px;
   background-color: black;
-  padding: 30px;
+  padding: 35px;
   color: white;
   font-family: "Times Now";
   font-size: 35px;
@@ -281,8 +282,8 @@ ARTISTS PAGE */
 .artist-title {
   color: white;
   position: absolute;
-  bottom: 220px;
-  left: 40px;
+  bottom: 250px;
+  left: 45px;
   font-family: "Favorit";
 }
 a {
@@ -449,4 +450,9 @@ a:hover {
   background-size: 100vw;
   max-height: 100vh !important;
   padding-top: 160px;
+}
+
+
+.artistinfo{
+  margin-top: -80px!important;
 }

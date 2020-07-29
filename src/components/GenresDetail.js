@@ -23,8 +23,12 @@ const GenresDetail = (props) => {
 
                     : <div></div>
             }
-                     <div className="tinytext" style={{color:"white", paddingTop:"30px",}}>RELATED ARTISTS</div>
+                    <div style={{paddingLeft:"38px"}}>
+                    <div className="tinytext" style={{color:"white", paddingTop:"30px",}}>RELATED ARTISTS</div>
                      <h1>{artistList && artistList && artistList.map(item=><div className=""onClick={()=>history.push({pathname:`/artists/${item.title}`})}>{item.title}</div>)}</h1> 
+
+                    </div>
+                     
 
 
         </div>

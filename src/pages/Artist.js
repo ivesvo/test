@@ -35,11 +35,8 @@ const Artist = () => {
             "T",
             "U",
             "V", "W",
-            "X"], ["Y", "Z"], ["0-9"]
+            "X"], ["Y", "Z"],["0-9"]
     ]
-
-    // const number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-
     let [artists, setArtists] = useState([])
     let history = useHistory()
     const loading = useSelector(state => state.app.loading)
@@ -67,7 +64,7 @@ const Artist = () => {
 
                             <div className="d-flex" style={{ marginTop: "10px" }}>
                                 <div>
-                                    <a className="city" href="#A">A</a> /
+                                        <a className="city" href="#A">A</a> /
                                         <a className="city" href="#B">B</a> /
                                         <a className="city" href="#C">C</a> /
                                         <a className="city" href="#D">D</a> /
@@ -106,7 +103,14 @@ const Artist = () => {
                                 </section>
 
                                 <div>
-                                    {artists.filter(element => element.title.startsWith(z || 0 <= z <= 9)).map(element => <div><h4><Link onClick={() => history.push({ pathname: `/artists/${element.title}` })} style={{ color: "white" }} className="artist-title-list">{element.title}</Link></h4></div>)}
+                                    {artists.filter(element => {
+                                        if (item == "0-9"){
+                                            return element.title.startsWith("7") || element.title.startsWith("1")
+                                        } else {
+                                            return element.title.startsWith(z)
+                                        }
+                                       
+                                    }).map(element => <div><h4><Link onClick={() => history.push({ pathname: `/artists/${element.title}` })} style={{ color: "white" }} className="artist-title-list">{element.title}</Link></h4></div>)}
                                 </div>
                             </Col>
                         )}</Row>))}
@@ -116,7 +120,7 @@ const Artist = () => {
                     </div>
 
 
-                    <div id="a"><i class="fa fa-long-arrow-up" aria-hidden="true" style={{ marginLeft: "-10px" }}></i> <span className="tinytext" style={{ marginLeft: "10px" }}>BACK TO TOP</span></div>
+                    <a href="#A"><i class="fa fa-long-arrow-up" aria-hidden="true" style={{ marginLeft: "-10px" }}></i> <span className="tinytext" style={{ marginLeft: "10px" }}>BACK TO TOP</span></a>
 
 
 

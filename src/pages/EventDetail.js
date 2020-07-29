@@ -48,14 +48,13 @@ const EventDetail = (props) => {
         }
     }
 
-
     if (loading) return <Loading />
     return (
         <div className="body">
             <div className="event">
                 <Row style={{ padding: "45px" }}>
 
-                    <Col md={6} style={{ paddingTop: "80px" }}>
+                    <Col md={5} style={{ paddingTop: "80px" }}>
                         <h1 style={{ fontSize: "120px" }}>{eventDetail.title}</h1>
 
                         <div>
@@ -101,11 +100,10 @@ const EventDetail = (props) => {
 
                                 <button className="btn sharp" onClick={() => dispatch({ type: "CART_UPDATE_FROM_LOCAL", payload: { event: eventDetail, count: ticket } })}>Add To Cart</button>
                             </Row>
-                        
-
                     </Col>
+                    <Col md={1}></Col>
 
-                    <Col md={6} className="poster-img">
+                    <Col md={5} className="poster-img">
                         <img className="poster" src={eventDetail.posterURL} />
                     </Col>
                 </Row>
