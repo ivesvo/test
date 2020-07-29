@@ -112,7 +112,7 @@ Link:hover {
 .ivy {
   padding-top: 200px;
   background-image: url(https://freight.cargo.site/t/original/i/2e3ac4513c1dbf52495bfe2652850c60062a9df57792fe0fa1312ff9a9219bce/VOQUOXY_0009_Layer-4.jpg);
-  background-size: 100vw;
+  background-size: 110vw;
   height: 100vh;
 }
 
@@ -456,3 +456,8 @@ a:hover {
 .artistinfo{
   margin-top: -80px!important;
 }
+
+.player:focus{
+  outline: none
+}
+
