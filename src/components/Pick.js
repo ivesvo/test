@@ -37,7 +37,7 @@ const Pick = () => {
                     <div  className="progressbar"  style={{backgroundColor:"#f1f3f4", width:"300px", height:"55px"}}>
                     <ReactAudioPlayer
                             className="player"
-                            src="https://cf-media.sndcdn.com/pRtFbtbMSlL5.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vcFJ0RmJ0Yk1TbEw1LjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1OTYwMTA5MzR9fX1dfQ__&Signature=YNufsTXlu-Lal1QeYZ54oGy9iJMam7l0KbFMsAb3Zw4XBXUuXXtCBcSQZoBj182m7w-UyT9GXVaETxvQytAiyHcwQgwyU3vZjVkG4uzW0~zWWzj6AVpGWWWDI1VIWM67cb2e5wnsvVNSuFixXeUCmaLIZXX3hTKmDVnaLbfx57kRcB-g53PLIutYY25WReYh5YGEXvtwHcioFJ2GpVHsZTFRWWXzyrzJ12Jl3P5ezpLZ-YrQxBnWxHoKig-BqulcTKku5ce5kkpo6PI03yNP2daUghixmEoXSJrvX-~SihnD2t05iv0aJHbQKZnEkKVaxnadjOjVbKs5BfXFeUM4fg__&Key-Pair-Id=APKAI6TU7MMXM5DG6EPQ" controls />
+                            src="https://cf-media.sndcdn.com/1VV5IDC2bZzD.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vMVZWNUlEQzJiWnpELjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1OTYwMjIxOTB9fX1dfQ__&Signature=DUzycfYUUifCwHxgwVChibI5Q-isHlfUhfELcA8xcAzSzvCRHznoUwy7R2qVJ~CQkjIel~qFTCl1kXixDknos6KnWHHCoVIb9pclueHkWc11Ehn5mdlVF49MZddJU-l59d06ttw3eWx0t1QT8ZatCyWtfef4nhFrQcSPZcYe4YBDyBW4O2eHqUEw2WcKJ6Qs3qYLyTOLEZrCxBH92XrB656faDilszicJO54mG42l5UA6npKwbONOsywqRnkU5P6i8Bf3p20MfRkxvdZP35fC~SbPy1DJTdPiNY5PVG-GZDtqVlaUZIkqmJOESEKYZKAH0JVUOnzW9pCmOiXWgKP1g__&Key-Pair-Id=APKAI6TU7MMXM5DG6EPQ" controls />
 
                     </div>
                     <div className="radioname" style={{paddingTop:"30px"}}>
@@ -57,7 +57,7 @@ const Pick = () => {
                     <div  className="progressbar"  style={{backgroundColor:"#f1f3f4", width:"300px", height:"55px" }}>
                     <ReactAudioPlayer
                             className="player"
-                            src="https://cf-media.sndcdn.com/27tLgkMprOiS.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vMjd0TGdrTXByT2lTLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1OTYwMTc5ODh9fX1dfQ__&Signature=WUM7n0GCp0YwxTx2zwksRTc7ChMmWgle05DtvoIaYdpsoWA0~nzeozMNg6CY24m7QBfznwKsMAHop3H7VXV-Ub1lEyd6IJhHbWVBgUIejikwOuemQ7XSOH52wn2tDQ~K5mvya46SJaMnvhlB203~UMUqaSxPoJRGxlYWTcBEVHfqlrnC5NWvtR-cc0cF0aJBQ6HIdugF9bBWXUfEejGCcEIwkjBWlKpXJiPfGiMrtNJsXnHLXReuyIVM1pN4oCKwlJWoyQTlTasxYTdLXLT361D2NrAUkoC9RdZ2w20loKzAUq14jhjtJI61SsovRRXyAn5GrJRdimX0wzzjTTz-sA__&Key-Pair-Id=APKAI6TU7MMXM5DG6EPQ" controls />
+                            src="https://cf-media.sndcdn.com/27tLgkMprOiS.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vMjd0TGdrTXByT2lTLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1OTYwMjc0MzV9fX1dfQ__&Signature=Kmmafv2xCS3ceC~kQGdYGGE4cI6lA6aDOixNbRikOYZltlCsPi9oezZ3XLtsMvNKNrImoEr-ropY8SIctiZH1qqOpMOZHvJYBxdrlN0EFclVS1o6e3-2He-TQWTD1WFmW0zoIxhvELeLVZSGaHkAxw~7iwJaFVTZ~CgW4aospJ4-ETmnfLrlrycXBA~jJOOwFmHR7DwXs2~Pp61InaXIk6Hn-TL~eUV-ZXwVp-eCea95kou12HI9PmIXPTb7EjJYmgQsS~HYLINKPflJne45E0eqpzVD6COK-durkwHAKnn7nem7tZKgnzicmeGLjpW2ulNWhlOh9vtKbJYsSQu2yA__&Key-Pair-Id=APKAI6TU7MMXM5DG6EPQ" controls />
                     </div>
                     <div className="radioname"style={{paddingTop:"30px"}}>
                             <h3>28.07.2020</h3>
