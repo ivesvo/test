@@ -85,7 +85,7 @@ Link:hover {
   justify-content: center;
   align-items: center;
   background-image: url('/Comp1.gif') !important;
-  background-size: 100vw !important;
+  background-size: 110vw !important;
   background-blend-mode: difference;
 }
 
@@ -112,7 +112,7 @@ Link:hover {
 .ivy {
   padding-top: 200px;
   background-image: url(https://freight.cargo.site/t/original/i/2e3ac4513c1dbf52495bfe2652850c60062a9df57792fe0fa1312ff9a9219bce/VOQUOXY_0009_Layer-4.jpg);
-  background-size: 110vw;
+  background-size: 100vw;
   height: 100vh;
 }
 
